@@ -6,21 +6,11 @@
 <link rel="stylesheet" href="master.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-</style>
-
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+-->
 <body class="light-grey">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-caret-up"></i></button>
 
     <div id="head-wrapper">
         <header>
@@ -34,8 +24,7 @@
                     <div class="dropdown-content">
                         <a href="#exp">Work Experience</a>
                         <a href="#edu">Education</a>
-                        <a href="#">Formal Experience</a>
-                        <a href="#">Informal Experience</a>
+                        <a href="#cert">Certificates/Awards</a>
                     </div>
                 </div> 
             
@@ -59,11 +48,12 @@
                             <h2>Kylie Frame</h2>
                         </div>
                     </div>
+                    
                     <div class="container">
                         <p><i class="fa fa-briefcase fa-fw margin-right large text-deep-purple"></i>Website/SEO Specialist</p>
                         <p><i class="fa fa-home fa-fw margin-right large text-deep-purple"></i>Dallas, Tx</p>
                         <p><i class="fa fa-envelope fa-fw margin-right large text-deep-purple"></i>kylie.frame88@gmail.com</p>
-                        <p><i class="fa fa-phone fa-fw margin-right large text-deep-purple"></i>9408829131</p>
+                        <p><i class="fa fa-phone fa-fw margin-right large text-deep-purple"></i>940-882-9131</p>
                         <hr>
 
 
@@ -90,9 +80,8 @@
                         <div class="light-grey round-xlarge">
                             <div class="round-xlarge deep-purple" style="height:24px;width:50%">&nbsp;&nbsp;50% </div>
                         </div>
-                        <br>
 
-
+                        <hr>
                         <p class="large"><b><i class="fa fa-asterisk fa-fw margin-right text-deep-purple"></i>Skills</b></p>
                         <p>Adobe Photoshop</p>
 
@@ -112,11 +101,12 @@
             <!-- Right Column -->
             <div class="twothird">
 
-                <div class="container card white margin-bottom">
+                <div class="container card white">
                     <h2 class="text-grey padding-16"><i
-                            class="fa fa-suitcase fa-fw margin-right xxlarge text-deep-purple"></i>Work Experience</h2>
+                            class="fa fa-suitcase fa-fw margin-right xxlarge text-deep-purple" id="exp"></i>Work Experience</h2>
                     <div class="container">
-                        <h5 class="opacity"><b>EZLYNX - Website Specialist - [<a href="https://www.ezlynx.com/"
+                        <img class="icon" src="img/ezlynx-logo.png">
+                        <h5 class="opacity"><b>Website Specialist - [<a href="https://www.ezlynx.com/"
                                     target="_blank">https://www.ezlynx.com/</a>]</b></h5>
                         <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>June 2014 - <span
                                 class="tag deep-purple round">Present</span></h6>
@@ -144,13 +134,14 @@
                             <li>Beta test new corporate and agency site features while providing constructive feedback
                                 to the developers.</li>
                         </ul>
-                        <hr>
+                        
                     </div>
-
+                    <hr>
                     <div class="container">
-                        <h5 class="opacity"><b>LZX INDUSTRIES - Electronics Assembly Technician - [<a
+                        <img class="icon" src="img/LZX-Logo.png">
+                        <h5 class="opacity"><b>Electronics Assembly Technician - <a class="word-wrap"
                                     href="https://lzxindustries.net/"
-                                    target="_blank">https://lzxindustries.net/</a>]</b></h5>
+                                    target="_blank">[https://lzxindustries.net/]</a></b></h5>
                         <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>March 2013 - May 2014
                         </h6>
                         <ul class="list">
@@ -160,13 +151,14 @@
                             <li>Create technical end user assistance by writing and editing documents to help users
                                 understand hardware products including repair manuals and maintenance guides.</li>
                         </ul>
-                        <hr>
+                        
                     </div>
-
+                    <hr>
                     <div class="container">
-                        <h5 class="opacity"><b>Computer Crusher Recycling - Front End Web Developer (Contracted) - [<a
+                        <img class="icon" src="img/ComputerCrusher-logo.png" alt="Computer Crusher Recycling Copmany">
+                        <h5 class="opacity"><b>Front End Web Developer (Contracted) - <a class="msize"
                                     href="https://www.computercrusher.com/"
-                                    target="_blank">https://www.computercrusher.com/</a>]</b></h5>
+                                    target="_blank">[https://www.computercrusher.com/]</a></b></h5>
                         <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>January 2013 - March 2013
                         </h6>
                         <ul class="list">
@@ -177,25 +169,32 @@
                         </ul>
                         <br>
                     </div>
-                </div>
 
-                <div class="container card white">
-                    <h2 class="text-grey padding-16"><i
-                            class="fa fa-certificate fa-fw margin-right xxlarge text-deep-purple"></i>Education</h2>
-                    <div class="container">
-                        <h5 class="opacity"><b>W3Schools.com</b></h5>
-                        <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>Forever</h6>
-                        <p>Web Development! All I need to know in one place</p>
-                        <hr>
+                    
+
+                </div>
+                <button type="button" class="collapsible deep-purple"><i class="fa fa-caret-down"></i> Want to see even more work experience?</button>
+                <div class="collapsecontent container card white margin-bottom">
+
+                    <div class="container" style="padding-top: 2em;">
+                        <img class="icon" src="img/" alt="PLACEHOLDER">
+                        <h5 class="opacity"><b>WORK PLACE</b></h5>
+                        <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>January 0000 - January 0000
+                        </h6>
+                        <ul class="list">
+                            <li>LIST ITEM 1</li>
+                        </ul>
+                        <br>
                     </div>
+
+                </div>
+                
+
+                <div class="container card white margin-bottom margin-top" id="edu">
+                    <h2 class="text-grey padding-16"> <i class="fa fa-graduation-cap fa-fw margin-right xxlarge text-deep-purple"></i>Education</h2>
+                    
                     <div class="container">
-                        <h5 class="opacity"><b>London Business School</b></h5>
-                        <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>2013 - 2015</h6>
-                        <p>Master Degree</p>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <img src="UNT.png" style="float: left;">
+                        <img class="icon" src="img/UNT.png">
                         <h5 class="opacity"><b>University of North Texas</b></h5>
                         <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>2007 - 2012</h6>
                         <br>
@@ -205,6 +204,25 @@
                             including; volleyball, basketball, and soccer. 4 years study of Spanish. Minor in computer
                             science with focus on web development and digital marketing</p>
                     </div>
+                    
+                </div>
+
+                <div class="container card white" id="cert">
+                    <h2 class="text-grey padding-16"> <i class="fa fa-certificate fa-fw margin-right xxlarge text-deep-purple"></i>Certificates & Awards</h2>
+                    <div class="container">
+                            <img class="icon" src="img/w3c.png" alt="W3C">
+                            <h5 class="opacity"><b>World Wide Web Consortium (W3Cx)</b></h5>
+                            <h6 class="text-deep-purple"><i class="fa fa-calendar fa-fw margin-right"></i>2018 - 2019</h6>
+                            <br>
+                            <h6><i>HTML5 and CSS Fundamentals - </i><a href="https://courses.edx.org/certificates/ba3e68f67e5545a396fd2e99eef6db4b" target="_blank"><i class="tag deep-purple round" style="padding-left: 4px;">View Certificate </i></a></h6>
+                            <h6><i>HTML5 Coding Essentials and Best Practices - </i> <a href="https://courses.edx.org/certificates/8a8132624b0d4eca9e80398e8c3703d7" target="_blank"><i class="tag deep-purple round" style="padding-left: 4px;">View Certificate</a></i></h6>
+                            <h6><i>JavaScript Introduction - </i> <a href="https://courses.edx.org/certificates/894f1bcb9dce4b90b294b13776a6b94d" target="_blank"><i class="tag deep-purple round" style="padding-left: 4px;">View Certificate</a></i></h6>
+                            <h6><i>CSS Basics - </i><a href="https://courses.edx.org/certificates/6c0de16dddd740f9a6999d47d3ab24ae" target="_blank"><i class="tag deep-purple round" style="padding-left: 4px;">View Certificate</a></i></h6>
+                            <h6><i>HTML5 Apps and Games - </i><a href="https://courses.edx.org/certificates/7ba756fb10c14f579b6ac6240c1d8966" target="_blank"><i class="tag deep-purple round" style="padding-left: 4px;">View Certificate</a></i></h6>
+                            <br>
+                    </div>
+
+
                 </div>
 
                 <!-- End Right Column -->
@@ -218,7 +236,7 @@
 
     <footer class="container deep-purple center margin-top">
         <p>Find me on social media.</p>
-        <i class="fa fa-facebook-official hover-opacity"></i>
+        <a class="fa fa-facebook-official hover-opacity"></a>
         <i class="fa fa-instagram hover-opacity"></i>
         <i class="fa fa-snapchat hover-opacity"></i>
         <i class="fa fa-pinterest-p hover-opacity"></i>
@@ -237,6 +255,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+       <script> //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 40px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}</script>
+
+<!-- collapsible script to display additional info if chosen -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 
 </body>
 
