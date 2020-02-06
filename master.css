@@ -1,7 +1,4 @@
-﻿
-html, body, h1, h2, h3, h4, h5, h6{font-family: "Roboto", sans-serif}
-
-*, *:before, *:after {
+﻿*, *:before, *:after {
     box-sizing: inherit
 }
 
@@ -134,6 +131,12 @@ header{
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
       }
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
