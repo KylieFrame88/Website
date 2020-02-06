@@ -384,7 +384,6 @@ img {
 }
 
 .icon {
-    padding-right: 1em;
     float: left;
 }
 
@@ -396,7 +395,7 @@ a {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    display: table
+    display: table;
 }
 
 .table-all {
@@ -687,6 +686,11 @@ a {
     overflow-x: auto
 }
 
+.column-body {
+    float: left;
+    padding: 10px;
+  }
+  
 .container:after, .container:before, .panel:after, .panel:before, .row:after, .row:before, .row-padding:after, .row-padding:before, .cell-row:before, .cell-row:after, .clear:after, .clear:before, .bar:before, .bar:after {
     content: "";
     display: table;
@@ -745,7 +749,7 @@ a {
 .col.s12 {
     width: 99.99999%
 }
-@media (min-width:601px) {
+@media (min-width:750px) {
 
     
     .col.m1 {
@@ -836,7 +840,7 @@ a {
 
 .content, .auto {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .content {
@@ -886,16 +890,10 @@ a {
     }
 }
 
-/*@media (max-width:400px){
-    a.msize{font-size: 11px !important;}
-    img.icon {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        float:none;
-    }
-    h2,h3,h4,h5,h6{text-align: center;}
-}*/
+@media (max-width:500px){
+    a.msize{font-size: 14px !important;}
+    ul,p,h3,h4,h5,h6{font-size: .9em;}
+}
 
 @media (max-width:600px) {
 
@@ -905,6 +903,20 @@ a {
         display: block;
         float:none;
     }
+
+    .column-body {
+        padding: 10px;
+        float:none;
+        text-align: center;
+      }
+      
+      .left-col {
+        width: 100%;
+      }
+      
+      .right-col {
+        width: 100%;
+      }
     h2,h3,h4,h5,h6{text-align: center;}
 
     .modal-content {
@@ -957,6 +969,27 @@ a {
     .hide-medium {
         display: none!important
     }
+    img.icon {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float:none;
+    }
+
+    .column-body {
+        padding: 10px;
+        float:none;
+        text-align: center;
+      }
+      
+      .left-col {
+        width: 100%;
+      }
+      
+      .right-col {
+        width: 100%;
+      }
+      h2,h3,h4,h5,h6{text-align: center;}
 }
 
 @media (max-width:992px) {
@@ -971,6 +1004,7 @@ a {
         max-width: 100%
     }
 }
+
 
 .top, .bottom {
     position: fixed;
