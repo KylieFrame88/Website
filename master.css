@@ -501,12 +501,16 @@ a {
     border-bottom: 1px solid #ddd
 }
 
+
 .list li {
     padding-top: 1em;
 }
+.list li:last-child {
+    padding-bottom: 2em;
+}
 
 .ul li:last-child {
-    border-bottom: none
+    border-bottom: none; 
 }
 
 .tooltip, .display-container {
